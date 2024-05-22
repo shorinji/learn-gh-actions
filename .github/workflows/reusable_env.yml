@@ -1,0 +1,8 @@
+name: reusable action that uses environment variables
+on: workflow_call
+jobs:
+    reusable_job:
+        runs-on: ubuntu-latest
+        steps:
+            - run: echo ${ RUNNER_DEBUG }
+            

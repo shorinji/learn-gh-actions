@@ -1,0 +1,10 @@
+name: "try pass env variables to reusable workflow"
+on: workflow_dispatch
+env:
+    RUNNER_DEBUG: 1
+    answer: 42
+
+jobs:
+    call_reusable:
+        uses: ./.github/workflows/reusable_env.yml
+        
