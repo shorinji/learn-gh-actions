@@ -4,5 +4,5 @@ jobs:
     reusable_job:
         runs-on: ubuntu-latest
         steps:
-            - run: echo ${ RUNNER_DEBUG }
+            - run: echo ${{ RUNNER_DEBUG }}
             
